@@ -1,0 +1,51 @@
+#PlaceHolders
+#audeathchest:actives
+#audeatchest:total
+
+#Configuraçoes do bau da morte
+death-chest:
+  material: PAPER
+  model: 10048
+  marke: false
+  scale: 1.0
+  offset: 0
+  createcemeteryground: true #Cria um piso no estilo de cemiterio ao redor do bau
+  cemeterysize: 5
+  disappear: 30 #tempo em que o bau some (em segundos)
+  sounduse: false
+  sound: BLOCK_NOTE_BLOCK_IRON_XYLOPHONE
+  inventoryfull: "&cSeu inventario esta cheio, dropando item no chão."
+  deahmessage:
+    - '&eSeu Anjo da Guarda nos falou para colocar seus itens em um baú, nas coordenadas: &b %loc% &eem %world%'
+    - '&cAntenção, Você so pode abrir o baú uma vez, depois disso ele some!'
+  notAllowedItems:
+    - '&cNão foi possível guardar seus itens!'
+    - '&cSeu Anjo da Guarda nos avisou que este mundo estava bloqueado.'
+  blackListWorlds: #mundos onde não sera posivel guardar os itens
+    - world
+    - spawn
+    -
+gui:
+  cheststitle: "&eBau da Morte"
+
+buttons:
+  collect:
+    slot: 48
+    name: "&aColetar Items"
+    lore:
+      - 'Clique para pegar seus items.'
+    material: PLAYER_HEAD
+    url: "https://textures.minecraft.net/texture/d9b2983c01b8da7dc1c0f12d02c4ab20cd8e6875e8df69eae2a867baee6236d4"
+    model: 100
+    glow: false
+
+
+  delete:
+    slot: 50
+    name: "&cExcluir"
+    lore:
+      - 'Clique para excluir o baú e seus items.'
+    material: PLAYER_HEAD
+    url: "https://textures.minecraft.net/texture/be0fd10199e8e4fcdabcae4f85c85918127a7c5553ad235f01c56d18bb9470d3"
+    model: 100
+    glow: false

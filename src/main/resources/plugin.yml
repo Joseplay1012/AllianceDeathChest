@@ -1,0 +1,16 @@
+name: AllianceDeathChest
+version: '${project.version}'
+main: net.alliancecraft.alliancedeathchest.AllianceDeathChest
+api-version: '1.20'
+authors: [joseplay1012]
+description: Instancia do AllianceUtils
+website: https://alliancecraft.net
+depend: [AllianceUtils]
+softdepend: [AllianceUtils]
+
+commands:
+  bauver:
+    aliases:
+      - dcv
+      - dchest
+      - deathchest
