@@ -32,7 +32,7 @@ import static net.alliancecraft.allianceutils.Utils.UnicodeFontReplace.allianceF
 public class PlayerInteractiListener extends DeathConfigs implements Listener {
     private JavaPlugin plugin = JavaPlugin.getProvidingPlugin(AllianceDeathChest.class);
 
-    @EventHandler(priority = EventPriority.MONITOR)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onChestInteract(PlayerInteractAtEntityEvent event) {
         if (!(event.getRightClicked() instanceof ArmorStand)) return;
 
@@ -76,7 +76,7 @@ public class PlayerInteractiListener extends DeathConfigs implements Listener {
         }
     }
 
-    @EventHandler(priority = EventPriority.MONITOR)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onChestInventoryClick(InventoryClickEvent event) {
         InventoryMetadataManager inventoryMetadataManager = new InventoryMetadataManager(plugin);
 
@@ -126,7 +126,7 @@ public class PlayerInteractiListener extends DeathConfigs implements Listener {
         }
     }
 
-    @EventHandler(priority = EventPriority.MONITOR)
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onAdminChestInventoryClick(InventoryClickEvent event) {
         InventoryMetadataManager inventoryMetadataManager = new InventoryMetadataManager(plugin);
 

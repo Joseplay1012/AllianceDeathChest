@@ -96,7 +96,7 @@ public class PlayerDeathListener implements Listener {
         return deathConfigs.getDeathMessage(plugin);
     }
 
-    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+    @EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
     public void onPLayerDeath(PlayerDeathEvent event){
         Player player = event.getEntity();
         if (deathPlayerCount.containsKey(player)) {
